@@ -2,7 +2,7 @@ import HeroImg from "../images/hero.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen px-hori">
+    <section className="relative w-full h-screen px-hori flex items-center">
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-overlay/30 bg-blend-overlay"
         style={{
@@ -14,16 +14,16 @@ export default function Hero() {
         }}
       ></div>
 
-      <div className="relative z-10 text-white font-manrope">
-        <p className="font-normal text-[20px]">Meet Ireland</p>
-        <h1 className="font-extrabold text-[64px]">
+      <div className="relative z-10 flex flex-col text-white font-manrope">
+        <p className="font-light text-[20px] mb-5">Meet Ireland</p>
+        <h1 className="font-extrabold text-[64px] w-[744px] leading-tight m-0">
           From Cliffs to Castles, Experience It All
         </h1>
-        <p className="font-normal text-[20px]">
+        <p className="font-light text-[20px] w-[606px] mt-6">
           Plan your perfect escape, from rugged coastlines to charming villages,
           and make memories that last a lifetime.
         </p>
-        <button className="px-6 py-1 bg-transparent rounded-md-btn border-2 border-white font-normal text-[20px]">
+        <button className="mt-9 px-6 py-1.5 w-[179px] bg-transparent rounded-md-btn border border-white font-light text-[20px]">
           Explore Now
         </button>
       </div>
