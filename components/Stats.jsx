@@ -1,4 +1,5 @@
 import { statsData } from "../data/statsData";
+import CountUp from "react-countup";
 
 export default function Stats() {
   return (
