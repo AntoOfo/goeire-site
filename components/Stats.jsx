@@ -8,7 +8,12 @@ export default function Stats() {
         {statsData.map((stat) => (
           <div className="text-center">
             <h2 className="font-semibold text-5xl">
-              {stat.value}
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={3}
+                decimals={stat.decimals}
+              />
               {stat.end}
             </h2>
             <h3 className="font-light text-[32px]">{stat.label}</h3>
