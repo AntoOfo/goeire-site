@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 export default function Stats() {
   return (
-    <section className="px-hori py-vert bg-section-secondary font-manrope">
+    <section className="px-hori py-vert bg-section-secondary font-manrope text-primary">
       <div className="flex justify-between">
         {statsData.map((stat) => (
           <div className="text-center">
