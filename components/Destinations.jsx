@@ -25,9 +25,9 @@ export default function Destinations() {
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth: 200,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
           }}
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
@@ -37,7 +37,7 @@ export default function Destinations() {
             <SwiperSlide>
               <img
                 src={dest.image}
-                className="w-full h-full py-7 mb-10 object-cover"
+                className="w-full h-full mb-10 object-cover rounded-2xl"
               />
             </SwiperSlide>
           ))}
