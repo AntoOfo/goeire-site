@@ -19,12 +19,14 @@ export default function Destinations() {
       <div className="py-12 font-manrope text-white">
         <Swiper
           effect={"coverflow"}
-          grabCursor={true}
+          grabCursor={false}
           centeredSlides={false}
           slidesPerView={3}
           loop={true}
+          allowTouchMove={false}
+          speed={2500}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           coverflowEffect={{
