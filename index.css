@@ -18,3 +18,7 @@
     --spacing-vert: 53px;
     --spacing-hori: 63px;
 }
+
+:root {
+    --swiper-theme-color: #1E293B !important;
+}
