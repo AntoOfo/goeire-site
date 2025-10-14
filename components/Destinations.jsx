@@ -26,7 +26,7 @@ export default function Destinations() {
           allowTouchMove={false}
           speed={2500}
           autoplay={{
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           coverflowEffect={{
@@ -41,16 +41,16 @@ export default function Destinations() {
           className="mySwiper w-full"
         >
           {destinationsData.map((dest) => (
-            <SwiperSlide className="relative w-full mb-20 rounded-2xl overflow-hidden">
+            <SwiperSlide className="relative w-full mb-20 rounded-2xl overflow-hidden group">
               <img
                 src={dest.image}
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-102 object-cover rounded-2xl transform transition-transform duration-900 ease-out group-hover:scale-104"
               />
               <div className="absolute inset-0 bg-overlay/20"></div>
 
               <div className="absolute inset-0 flex flex-col gap-2 justify-end p-4 z-20">
-                <h2 className="font-medium text-4xl">{dest.place}</h2>
-                <p className="font-normal text-2xl">{dest.tag}</p>
+                <h2 className="font-normal text-4xl w-52">{dest.place}</h2>
+                <p className="font-light text-2xl">{dest.tag}</p>
               </div>
             </SwiperSlide>
           ))}
