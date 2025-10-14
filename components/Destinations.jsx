@@ -36,7 +36,9 @@ export default function Destinations() {
             modifier: 1,
             slideShadows: false,
           }}
-          pagination={true}
+          pagination={{
+            dynamicBullets: true,
+          }}
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper w-full"
         >
