@@ -16,7 +16,7 @@ export default function Destinations() {
         </p>
       </div>
 
-      <div className="py-12">
+      <div className="py-12 font-manrope text-white">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -39,7 +39,12 @@ export default function Destinations() {
                 src={dest.image}
                 className="w-full h-full object-cover rounded-2xl"
               />
-              <div className="absolute inset-0 bg-overlay/10"></div>
+              <div className="absolute inset-0 bg-overlay/20"></div>
+
+              <div className="absolute inset-0 flex flex-col gap-2 justify-end p-4 z-20">
+                <h2 className="font-medium text-4xl">{dest.place}</h2>
+                <p className="font-normal text-2xl">{dest.tag}</p>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
