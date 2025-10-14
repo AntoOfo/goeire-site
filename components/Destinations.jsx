@@ -4,6 +4,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
+import { motion } from "framer-motion";
+
 import { destinationsData } from "../data/destinationsData";
 
 export default function Destinations() {
@@ -48,7 +50,7 @@ export default function Destinations() {
                 src={dest.image}
                 className="w-full h-88 object-cover rounded-2xl transform transition-transform duration-900 ease-out group-hover:scale-104"
               />
-              <div className="absolute inset-0 bg-overlay/20"></div>
+              <div className="absolute inset-0 bg-overlay/20 bg-gradient-to-t from-overlay/60 via-overlay/5 to-transparent"></div>
 
               <div className="absolute inset-0 flex flex-col gap-1 justify-end p-4 z-20">
                 <h2 className="font-normal text-3xl w-52">{dest.place}</h2>
