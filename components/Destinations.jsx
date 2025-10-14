@@ -16,7 +16,7 @@ export default function Destinations() {
         </p>
       </div>
 
-      <div className="py-20">
+      <div className="py-12">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -24,7 +24,7 @@ export default function Destinations() {
           slidesPerView={3}
           coverflowEffect={{
             rotate: 50,
-            stretch: 0,
+            stretch: -60,
             depth: 200,
             modifier: 1,
             slideShadows: false,
@@ -34,11 +34,12 @@ export default function Destinations() {
           className="mySwiper w-full"
         >
           {destinationsData.map((dest) => (
-            <SwiperSlide>
+            <SwiperSlide className="relative w-full mb-20 rounded-2xl overflow-hidden">
               <img
                 src={dest.image}
-                className="w-full h-full mb-10 object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl"
               />
+              <div className="absolute inset-0 bg-overlay/10"></div>
             </SwiperSlide>
           ))}
         </Swiper>
