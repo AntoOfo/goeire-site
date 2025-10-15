@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Stats from "./components/Stats";
 import Destinations from "./components/Destinations";
+import Discover from "./components/Discover";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Hero />
       <Stats />
       <Destinations />
+      <Discover />
     </>
   );
 }
