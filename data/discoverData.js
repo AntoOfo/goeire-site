@@ -38,7 +38,7 @@ export const discoverData = [
     {
         image: Music,
         title: "Galway Music",
-        desc: "Enjoy live tunes and local drinks in Galway.",
+        desc: "Experience live music and the energy that fills Galway's pubs.",
         icon: Culture,
         tag: "Culture • Galway"
     },
@@ -54,7 +54,7 @@ export const discoverData = [
     {
         image: Writers,
         title: "Dublin Writers",
-        desc: "Visit cafés and landmarks tied to irish writers.",
+        desc: "Explore the cafés and landmarks that inspired Ireland's great authors",
         icon: Culture,
         tag: "Culture • Dublin"
     }
