@@ -9,7 +9,7 @@ export default function Discover() {
         <h2 className="font-semibold text-5xl">What Will You Discover?</h2>
 
         <div>
-          <div>
+          <div className="w-[435px]">
             <img
               src={Placeholder}
               className="w-[435px] h-[235px] rounded-img mb-4"
@@ -17,17 +17,17 @@ export default function Discover() {
             <h3 className="font-medium text-[28px] mb-3.5">
               Glendalough Trail
             </h3>
-            <p className="font-medium text-[20px] opacity-60 w-[435px]">
+            <p className="font-medium text-[20px] opacity-60 w-[435px] mb-6">
               A peaceful hike through Wicklow's valleys and mirrored lakes.
             </p>
-            <div className="flex">
-              <span className="flex gap-">
+            <div className="flex justify-between">
+              <span className="flex items-end gap-2.5">
                 <img src={Icon} className="w-[30px] h-[30px]" />
-                <p className="font-normal text-[16px] opacity-60">
+                <p className="font-medium text-[16px] opacity-60">
                   Nature • Wicklow
                 </p>
               </span>
-              <button className="bg-primary">
+              <button className="bg-primary rounded-sm-btn p-1">
                 <img src={Arrow} className="w-5 h-5" />
               </button>
             </div>
