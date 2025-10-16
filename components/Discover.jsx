@@ -23,12 +23,16 @@ export default function Discover() {
         >
           {discoverData.map((disc, index) => (
             <div key={index} className="w-[435px] mb-10 break-inside-avoid">
-              <img
-                src={disc.image}
-                className={`w-[435px] ${
-                  index % 2 === 0 ? "h-[235px]" : "h-[327px]"
-                } rounded-img mb-4 object-cover`}
-              />
+              <div className="relative">
+                <img
+                  src={disc.image}
+                  className={`w-[435px] ${
+                    index % 2 === 0 ? "h-[235px]" : "h-[327px]"
+                  } rounded-img mb-4 object-cover`}
+                />
+                <div className="absolute inset-0 bg-overlay/15 rounded-img"></div>
+              </div>
+
               <h3 className="font-medium text-[28px] mb-3.5">{disc.title}</h3>
               <p className="font-medium text-[20px] opacity-60 w-[435px] mb-6">
                 {disc.desc}
