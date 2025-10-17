@@ -1,6 +1,7 @@
 import Divider from "@mui/material/Divider";
 
 import { navigateData } from "../data/navigateData";
+import { locationsData } from "../data/locationsData";
 
 import { useEffect } from "react";
 
@@ -9,13 +10,19 @@ import "leaflet/dist/leaflet.css";
 
 export default function Navigate() {
   useEffect(() => {
-    const map = L.map("map").setView([53.3498, -8.2603], 6.5);
+    const map = L.map("map").setView([53.3498, -8.2603], 6.4);
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
+
+    locationsData.map((loc) => {
+      L.marker(loc.coords)
+        .addTo(map)
+        .bindPopup(`<b>${loc.name}</b><br />${loc.desc}`);
+    });
 
     return () => {
       map.remove();

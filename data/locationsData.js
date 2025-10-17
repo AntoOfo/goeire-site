@@ -14,13 +14,13 @@ export const locationsData = [
   {
     coords: [53.2707, -9.0568],
     name: "Galway",
-    desc: "Cultural hub on Ireland’s west coast.",
+    desc: "Cultural hub on Ireland's west coast.",
   },
 
   {
     coords: [54.5973, -5.9301],
     name: "Belfast",
-    desc: "Northern Ireland’s capital, rich in history.",
+    desc: "Northern Ireland's capital, rich in history.",
   },
 
   {
@@ -44,7 +44,7 @@ export const locationsData = [
   {
     coords: [55.1315, -6.6615],
     name: "Portrush",
-    desc: "Coastal resort town famous for its beaches.",
+    desc: "Coastal resort town known for its beaches.",
   },
 
   {
