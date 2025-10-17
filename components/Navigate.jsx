@@ -2,7 +2,26 @@ import Divider from "@mui/material/Divider";
 
 import { navigateData } from "../data/navigateData";
 
+import { useEffect } from "react";
+
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
 export default function Navigate() {
+  useEffect(() => {
+    const map = L.map("map").setView([53.3498, -6.2603], 7);
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    return () => {
+      map.remove();
+    };
+  }, []);
+
   return (
     <section className="px-hori py-vert bg-section-main font-manrope text-primary">
       <div className="flex">
@@ -26,6 +45,10 @@ export default function Navigate() {
             </span>
           ))}
         </div>
+        <div
+          id="map"
+          className="w-full h-[570px] rounded-xl overflow-hidden"
+        ></div>
       </div>
     </section>
   );
