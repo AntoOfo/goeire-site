@@ -1,6 +1,6 @@
 import Divider from "@mui/material/Divider";
 
-import Clover from "../icons/nature.png";
+import { navigateData } from "../data/navigateData";
 
 export default function Navigate() {
   return (
@@ -19,13 +19,12 @@ export default function Navigate() {
           <Divider className="w-[580px] font-medium text-[18px] text-primary/80">
             Quick Travel Tips
           </Divider>
-          <span className="flex items-center gap-3.5 mt-9">
-            <img src={Clover} className="w-[32px] h-[32px]" />
-            <p className="font-medium text-[18px] opacity-80">
-              Best time to visit: May to September for mild weather and long
-              daylight hours
-            </p>
-          </span>
+          {navigateData.map((nav) => (
+            <span className="flex items-center gap-3.5 mt-9">
+              <img src={nav.icon} className="w-[32px] h-[32px]" />
+              <p className="font-medium text-[18px] opacity-80">{nav.desc}</p>
+            </span>
+          ))}
         </div>
       </div>
     </section>
