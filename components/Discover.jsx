@@ -18,29 +18,31 @@ export default function Discover() {
 
         <Masonry
           breakpointCols={breakpointColumns}
-          className="flex gap-6 mt-14"
+          className="flex gap-16 mt-14"
           columnClassName="space-y-10"
         >
           {discoverData.map((disc, index) => (
-            <div key={index} className="w-[435px] mb-10 break-inside-avoid">
-              <div className="relative">
+            <div key={index} className="w-[415px] mb-14 break-inside-avoid">
+              <div className="relative group rounded-img overflow-hidden">
                 <img
                   src={disc.image}
-                  className={`w-[435px] ${
+                  className={`w-[415px] ${
                     index % 2 === 0 ? "h-[235px]" : "h-[327px]"
-                  } rounded-img mb-4 object-cover`}
+                  } rounded-img object-cover transform transition-transform duration-900 ease-out group-hover:scale-101`}
                 />
-                <div className="absolute inset-0 bg-overlay/15 rounded-img"></div>
+                <div className="absolute inset-0 bg-overlay/15 bg-gradient-to-t from-overlay/30 via-overlay/5 to-transparent rounded-img"></div>
               </div>
 
-              <h3 className="font-medium text-[28px] mb-3.5">{disc.title}</h3>
-              <p className="font-medium text-[20px] opacity-60 w-[435px] mb-6">
+              <h3 className="font-medium text-[28px] mt-4 mb-2">
+                {disc.title}
+              </h3>
+              <p className="font-normal text-[20px] opacity-60 w-[415px] mb-5.5">
                 {disc.desc}
               </p>
               <div className="flex justify-between">
-                <span className="flex items-end gap-2.5">
-                  <img src={disc.icon} className="w-[30px] h-[30px]" />
-                  <p className="font-medium text-[16px] opacity-60">
+                <span className="flex items-end gap-3">
+                  <img src={disc.icon} className="w-[28px] h-[28px]" />
+                  <p className="font-light text-[16px] opacity-60">
                     {disc.tag}
                   </p>
                 </span>
