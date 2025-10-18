@@ -5,6 +5,7 @@ import Destinations from "./components/Destinations";
 import Discover from "./components/Discover";
 import Navigate from "./components/Navigate";
 import Testimonials from "./components/Testimonials";
+import Cta from "./components/Cta";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Discover />
       <Navigate />
       <Testimonials />
+      <Cta />
     </>
   );
 }
