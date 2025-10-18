@@ -4,6 +4,7 @@ import Stats from "./components/Stats";
 import Destinations from "./components/Destinations";
 import Discover from "./components/Discover";
 import Navigate from "./components/Navigate";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Destinations />
       <Discover />
       <Navigate />
+      <Testimonials />
     </>
   );
 }
