@@ -14,8 +14,6 @@ export default function Navigate() {
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
-      attribution:
-        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
 
     locationsData.map((loc) => {
@@ -31,7 +29,7 @@ export default function Navigate() {
 
   return (
     <section className="px-hori py-vert bg-section-main font-manrope text-primary">
-      <div className="flex gap-40">
+      <div className="flex justify-between">
         <div className="w-[600px]">
           <h2 className="font-semibold text-5xl mb-8">
             Navigate The Emerald Isle
@@ -54,7 +52,7 @@ export default function Navigate() {
         </div>
         <div
           id="map"
-          className="w-full h-[580px] rounded-xl overflow-hidden"
+          className="w-[634px] h-[530px] rounded-img overflow-hidden border-2 border-black/30"
         ></div>
       </div>
     </section>
