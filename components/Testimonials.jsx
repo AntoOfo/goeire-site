@@ -2,12 +2,12 @@ import Quote from "../icons/quote.png";
 
 export default function Testimonials() {
   return (
-    <section className="px-hori py-vert bg-section-main font-manrope text-primary">
+    <section className="px-hori py-vert bg-section-secondary font-manrope text-primary">
       <div>
         <h2 className="font-semibold text-5xl text-center">
           Ireland, As Told By Others
         </h2>
-        <div className="flex">
+        <div className="flex justify-between mt-14">
           <span className="flex flex-col gap-5 items-center w-[435px]">
             <img src={Quote} className="w-14 h-14" />
             <h3 className="font-medium text-[28px] text-center">
