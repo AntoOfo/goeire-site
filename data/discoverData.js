@@ -30,7 +30,7 @@ export const discoverData = [
     {
         image: Surf,
         title: "Lahinch Surfing",
-        desc: "Catch eaves along the sandy beaches of Lahinch.",
+        desc: "Catch waves along the sandy beaches of Lahinch.",
         icon: Adventure,
         tag: "Adventure • Clare"
     },
@@ -54,7 +54,7 @@ export const discoverData = [
     {
         image: Writers,
         title: "Dublin Writers",
-        desc: "Explore the cafés and landmarks that inspired Ireland's great authors",
+        desc: "Explore the cafés and landmarks that inspired Ireland's great authors.",
         icon: Culture,
         tag: "Culture • Dublin"
     }
