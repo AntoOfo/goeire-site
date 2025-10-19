@@ -3,6 +3,9 @@ import Github from "../icons/github.png";
 import Mail from "../icons/mail.png";
 import Logo from "../icons/eirelogo.png";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
 export default function Footer() {
   return (
     <footer className="py-16 px-44 bg-footer text-white font-manrope">
@@ -32,6 +35,20 @@ export default function Footer() {
           <p className="font-normal text-[18px] opacity-60">
             Enter your email to get notified about our latest news
           </p>
+          <div className="flex gap-2 w-full items-center">
+            <Input
+              type="email"
+              placeholder="Email"
+              className="bg-white/7 border-transparent"
+            />
+            <Button
+              type="submit"
+              variant="outline"
+              className="bg-white/7 border-1 border-white/50"
+            >
+              Subscribe
+            </Button>
+          </div>
         </span>
       </div>
     </footer>
