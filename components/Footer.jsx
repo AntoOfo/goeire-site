@@ -1,11 +1,32 @@
 import Linkedin from "../icons/linkedin_two.png";
 import Github from "../icons/github.png";
 import Mail from "../icons/mail.png";
+import Logo from "../icons/eirelogo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-footer">
-      <h1>test</h1>
+    <footer className="py-16 px-44 bg-footer text-white font-manrope">
+      <div className="flex">
+        <span>
+          <img src={Logo} className="w-[140px] opacity-60" />
+          <span className="flex">
+            <img src={Linkedin} className="w-[34px] opacity-30" />
+            <img src={Github} className="w-[34px] opacity-30" />
+            <img src={Mail} className="w-[34px] opacity-30" />
+          </span>
+        </span>
+
+        <span>
+          <p className="font-normal text-[18px] opacity-60">CONTACT US</p>
+          <p className="font-normal text-[18px] opacity-60">
+            enquires@goeire.co
+          </p>
+          <p className="font-normal text-[18px] opacity-60">
+            12 Smith Rd, Co. Dublin, Unit 12
+          </p>
+          <p className="font-normal text-[18px] opacity-60">+353 89 232 4508</p>
+        </span>
+      </div>
     </footer>
   );
 }
