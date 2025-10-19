@@ -16,7 +16,7 @@ export const discoverData = [
         title: "Kilkenny Crafts",
         desc: "See pottery and glasswork made by local artisans.",
         icon: Culture,
-        tag: "Culture • Kilkenny"
+        tag: "Year-round"
     },
 
     {
@@ -24,7 +24,7 @@ export const discoverData = [
         title: "Wicklow Hikes",
         desc: "A peaceful hike through Wicklow's valleys and lakes.",
         icon: Nature,
-        tag: "Nature • Wicklow"
+        tag: "Spring to Autumn"
     },
 
     {
@@ -32,7 +32,7 @@ export const discoverData = [
         title: "Lahinch Surfing",
         desc: "Catch waves along the sandy beaches of Lahinch.",
         icon: Adventure,
-        tag: "Adventure • Clare"
+        tag: "Summer Months"
     },
 
     {
@@ -40,7 +40,7 @@ export const discoverData = [
         title: "Galway Music",
         desc: "Experience live music and the energy that fills Galway's pubs.",
         icon: Culture,
-        tag: "Culture • Galway"
+        tag: "Year-round"
     },
 
     {
@@ -48,7 +48,7 @@ export const discoverData = [
         title: "Cork Market",
         desc: "Sample fresh produce and baked goods at the market.",
         icon: Food,
-        tag: "Food • Cork"
+        tag: " Best Before Noon"
     },
 
     {
@@ -56,6 +56,6 @@ export const discoverData = [
         title: "Dublin Writers",
         desc: "Explore the cafés and landmarks that inspired Ireland's great authors.",
         icon: Culture,
-        tag: "Culture • Dublin"
+        tag: "Year-round"
     }
 ]

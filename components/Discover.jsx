@@ -18,7 +18,7 @@ export default function Discover() {
             <Divider />
 
             {discoverData.map((disc, index) => (
-              <div>
+              <div className="group hover:cursor-pointer">
                 <div className="flex gap-7 items-center py-8">
                   <img
                     src={disc.image}
@@ -30,7 +30,7 @@ export default function Discover() {
                         <h3 className="font-medium text-[28px]">
                           {disc.title}
                         </h3>
-                        <p className="font-medium text-[16px] opacity-60">
+                        <p className="font-normal text-[16px] opacity-60">
                           {disc.tag}
                         </p>
                       </span>
@@ -38,7 +38,10 @@ export default function Discover() {
                         {disc.desc}
                       </p>
                     </div>
-                    <img src={Chevron} className="w-4 h-4" />
+                    <img
+                      src={Chevron}
+                      className="w-4 h-4 mr-1.5 opacity-50 duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:mr-0"
+                    />
                   </div>
                 </div>
                 <Divider />
