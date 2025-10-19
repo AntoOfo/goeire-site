@@ -5,7 +5,7 @@ import Relax from "../icons/relax.png"
 export const navigateData = [
     {
         icon: Clover,
-        desc: "Best time to visit: May to September for mild weather and long daylight hours"
+        desc: "Best time to visit is May to September for mild weather and long daylight hours."
     },
 
     {

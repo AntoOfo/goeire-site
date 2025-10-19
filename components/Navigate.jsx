@@ -31,17 +31,14 @@ export default function Navigate() {
     <section className="px-hori py-vert bg-section-main font-manrope text-primary">
       <div className="flex justify-between">
         <div className="w-[600px]">
-          <h2 className="font-semibold text-5xl mb-8">
+          <h2 className="font-semibold text-5xl mb-4">
             Navigate The Emerald Isle
           </h2>
-          <p className="font-medium text-[18px] opacity-80 leading-[220%] mb-9">
-            Ireland offers breathtaking scenery, deep history, and vibrant
-            culture. From rugged coasts to charming towns, every stop holds
-            something unforgettable. Use this guide to plan and explore its
-            hidden gems.
+          <p className="font-medium text-[20px] mb-9">
+            Explore Ireland's landscapes and hidden gems
           </p>
           <Divider className="w-[580px] font-medium text-[18px] text-primary/80">
-            Quick Travel Tips
+            Travel Tips
           </Divider>
           {navigateData.map((nav) => (
             <span className="flex items-center gap-3.5 mt-9">
@@ -52,7 +49,7 @@ export default function Navigate() {
         </div>
         <div
           id="map"
-          className="w-[634px] h-[530px] rounded-img overflow-hidden border-2 border-black/30"
+          className="w-[634px] h-[440px] rounded-img overflow-hidden border-2 border-black/30"
         ></div>
       </div>
     </section>
