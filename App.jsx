@@ -6,6 +6,7 @@ import Discover from "./components/Discover";
 import Navigate from "./components/Navigate";
 import Testimonials from "./components/Testimonials";
 import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Navigate />
       <Testimonials />
       <Cta />
+      <Footer />
     </>
   );
 }
