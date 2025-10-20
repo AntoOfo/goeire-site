@@ -15,7 +15,7 @@ export default function Header() {
     const handleScroll = () => {
       const y = window.scrollY;
       setIsVisible(y <= 8 || y >= 550);
-      setIsStyled(y >= 550);
+      setStyled(y >= 550);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,25 +24,23 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full px-hori py-[21px] flex items-center duration-700 justify-between ${
-        isScrolled
-          ? "bg-white/60 rounded-[34px] backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 z-50 w-full px-hori py-[21px] flex items-center duration-700 ease-out justify-between 
+        ${!isVisible ? "opacity-0 pointer-events-none" : "opacity-100"}
+        ${
+          isStyled
+            ? "bg-white/60 rounded-[34px] backdrop-blur-md shadow-sm text-black"
+            : "bg-transparent text-white"
+        }`}
     >
       <div>
         <img
-          src={isScrolled ? LogoBlack : Logo}
+          src={isStyled ? LogoBlack : Logo}
           alt="Site Logo"
           className="w-[90px] h-[26px]"
         />
       </div>
 
-      <div
-        className={`flex gap-[50px] font-manrope text-[20px] duration-700 font-light ${
-          isScrolled ? "text-black" : "text-white"
-        }`}
-      >
+      <div className="flex gap-[50px] font-manrope text-[20px] duration-400 font-light">
         <p>Home</p>
         <p>Destinations</p>
         <p>Experiences</p>
@@ -52,12 +50,12 @@ export default function Header() {
 
       <div className="flex gap-[50px]">
         <img
-          src={isScrolled ? SearchBlack : Search}
+          src={isStyled ? SearchBlack : Search}
           alt="Search"
           className="w-6 h-6"
         />
         <img
-          src={isScrolled ? AccountBlack : Account}
+          src={isStyled ? AccountBlack : Account}
           alt="Account"
           className="w-6 h-6 opacity-85"
         />
