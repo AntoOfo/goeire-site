@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center justify-between ${
+      className={`fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center duration-500 justify-between ${
         isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
@@ -26,7 +26,11 @@ export default function Header() {
         <img src={Logo} alt="Site Logo" className="w-[90px] h-[26px]" />
       </div>
 
-      <div className="flex gap-[50px] font-manrope text-[20px] text-white font-light">
+      <div
+        className={`flex gap-[50px] font-manrope text-[20px] duration-500 font-light ${
+          isScrolled ? "text-black" : "text-white"
+        }`}
+      >
         <p>Home</p>
         <p>Destinations</p>
         <p>Experiences</p>
