@@ -2,9 +2,13 @@ import Logo from "../icons/eirelogo.png";
 import Search from "../icons/search.png";
 import Account from "../icons/user.png";
 
+import { useEffect, useState } from "react";
+
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   return (
-    <header className="absolute top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center justify-between">
+    <header className="fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center justify-between">
       <div>
         <img src={Logo} alt="Site Logo" className="w-[90px] h-[26px]" />
       </div>
