@@ -15,7 +15,7 @@ export default function Discover() {
 
         <div className="mt-14">
           <div>
-            <Divider />
+            <Divider className="opacity-40" />
 
             {discoverData.map((disc, index) => (
               <div className="group hover:cursor-pointer">
@@ -44,7 +44,7 @@ export default function Discover() {
                     />
                   </div>
                 </div>
-                <Divider />
+                <Divider className="opacity-40" />
               </div>
             ))}
           </div>

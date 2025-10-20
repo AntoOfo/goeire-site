@@ -10,12 +10,12 @@ export default function Footer() {
   return (
     <footer className="py-16 px-44 bg-footer text-white font-manrope">
       <div className="flex justify-between">
-        <span className="flex flex-col gap-[42px] w-[280px]">
-          <img src={Logo} className="w-[140px] opacity-60" />
-          <span className="flex gap-[21px]">
-            <img src={Linkedin} className="w-[34px] opacity-30" />
-            <img src={Github} className="w-[34px] opacity-30" />
-            <img src={Mail} className="w-[34px] opacity-30" />
+        <span className="flex flex-col gap-[20px] w-[280px]">
+          <img src={Logo} className="w-[100px] opacity-60" />
+          <span className="flex ml-1 gap-[14px]">
+            <img src={Linkedin} className="w-[24px] opacity-30" />
+            <img src={Github} className="w-[24px] opacity-30" />
+            <img src={Mail} className="w-[24px] opacity-30" />
           </span>
         </span>
 
