@@ -7,8 +7,21 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center justify-between">
+    <header
+      className={`fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center justify-between ${
+        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      }`}
+    >
       <div>
         <img src={Logo} alt="Site Logo" className="w-[90px] h-[26px]" />
       </div>
