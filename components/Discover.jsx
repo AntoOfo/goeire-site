@@ -27,7 +27,7 @@ export default function Discover() {
                   <div className="flex w-full justify-between items-center">
                     <div className="flex flex-col gap-0.5">
                       <span className="flex gap-5 items-baseline">
-                        <h3 className="font-medium text-[28px]">
+                        <h3 className="font-medium text-[28px] duration-400 group-hover:text-[28.5px]">
                           {disc.title}
                         </h3>
                         <p className="font-normal text-[16px] opacity-60">

@@ -1,5 +1,6 @@
 import { statsData } from "../data/statsData";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 export default function Stats() {
   return (
