@@ -1,7 +1,9 @@
 import Logo from "../icons/eirelogo.png";
 import LogoBlack from "../icons/eirelogo2.png";
 import Search from "../icons/search.png";
+import SearchBlack from "../icons/search2.png";
 import Account from "../icons/user.png";
+import AccountBlack from "../icons/user2.png";
 
 import { useEffect, useState } from "react";
 
@@ -44,8 +46,16 @@ export default function Header() {
       </div>
 
       <div className="flex gap-[50px]">
-        <img src={Search} alt="Search" className="w-6 h-6" />
-        <img src={Account} alt="Account" className="w-6 h-6 " />
+        <img
+          src={isScrolled ? SearchBlack : Search}
+          alt="Search"
+          className="w-6 h-6"
+        />
+        <img
+          src={isScrolled ? AccountBlack : Account}
+          alt="Account"
+          className="w-6 h-6 opacity-85"
+        />
       </div>
     </header>
   );
