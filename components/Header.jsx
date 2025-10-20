@@ -8,11 +8,14 @@ import AccountBlack from "../icons/user2.png";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isStyled, setStyled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 80);
+      const y = window.scrollY;
+      setIsVisible(y <= 8 || y >= 550);
+      setIsStyled(y >= 550);
     };
 
     window.addEventListener("scroll", handleScroll);
