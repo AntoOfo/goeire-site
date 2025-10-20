@@ -1,4 +1,5 @@
 import Logo from "../icons/eirelogo.png";
+import LogoBlack from "../icons/eirelogo2.png";
 import Search from "../icons/search.png";
 import Account from "../icons/user.png";
 
@@ -23,7 +24,11 @@ export default function Header() {
       }`}
     >
       <div>
-        <img src={Logo} alt="Site Logo" className="w-[90px] h-[26px]" />
+        <img
+          src={isScrolled ? LogoBlack : Logo}
+          alt="Site Logo"
+          className="w-[90px] h-[26px]"
+        />
       </div>
 
       <div
