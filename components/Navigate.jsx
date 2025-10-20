@@ -49,7 +49,7 @@ export default function Navigate() {
         </div>
         <div
           id="map"
-          className="w-[634px] h-[440px] rounded-img overflow-hidden border-2 border-black/30"
+          className="w-[634px] h-[440px] rounded-img z-10 overflow-hidden border-2 border-black/30"
         ></div>
       </div>
     </section>

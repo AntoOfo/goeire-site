@@ -12,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,8 +21,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-20 w-full px-hori py-[21px] flex items-center duration-500 justify-between ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 z-50 w-full px-hori py-[21px] flex items-center duration-700 justify-between ${
+        isScrolled
+          ? "bg-white/60 rounded-[34px] backdrop-blur-md shadow-sm"
+          : "bg-transparent"
       }`}
     >
       <div>
@@ -34,7 +36,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`flex gap-[50px] font-manrope text-[20px] duration-500 font-light ${
+        className={`flex gap-[50px] font-manrope text-[20px] duration-700 font-light ${
           isScrolled ? "text-black" : "text-white"
         }`}
       >
