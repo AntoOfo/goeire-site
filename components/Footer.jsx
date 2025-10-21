@@ -59,7 +59,7 @@ export default function Footer() {
             <Button
               type="submit"
               variant="outline"
-              className="bg-white/7 border-1 border-white/50"
+              className="bg-white/7 border-1 border-white/50 hover:cursor-pointer"
             >
               Subscribe
             </Button>

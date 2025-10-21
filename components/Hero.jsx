@@ -1,5 +1,7 @@
 import HeroImg from "../images/hero.jpg";
 
+import Typewriter from "typewriter-effect";
+
 export default function Hero() {
   return (
     <section
@@ -19,8 +21,24 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col text-white font-manrope">
         <p className="font-light text-[20px] mb-5">Meet Ireland</p>
-        <h1 className="font-extrabold text-[64px] w-[744px] leading-tight m-0">
-          From Cliffs to Castles, Experience It All
+        <h1 className=" relative font-extrabold text-[64px] w-[744px] leading-tight m-0">
+          <span className="invisible block">
+            From Cliffs to Castles, Experience It All
+          </span>
+
+          <span className="absolute top-0 left-0">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("From Cliffs to Castles, Experience It All")
+                  .changeDelay(75)
+                  .start();
+              }}
+              options={{
+                delay: 40,
+              }}
+            />
+          </span>
         </h1>
         <p className="font-light text-[20px] w-[606px] mt-6">
           Plan your perfect escape, from rugged coastlines to charming villages,
@@ -33,3 +51,5 @@ export default function Hero() {
     </section>
   );
 }
+
+//
