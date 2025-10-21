@@ -2,7 +2,10 @@ import HeroImg from "../images/hero.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen px-hori flex items-center">
+    <section
+      id="home"
+      className="relative w-full h-screen px-hori flex items-center"
+    >
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-overlay/30 bg-blend-overlay"
         style={{

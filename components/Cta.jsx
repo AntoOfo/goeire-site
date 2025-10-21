@@ -1,6 +1,9 @@
 export default function Cta() {
   return (
-    <section className="px-hori py-vert bg-section-secondary font-manrope">
+    <section
+      id="plan"
+      className="px-hori py-vert bg-section-secondary font-manrope"
+    >
       <div className="bg-gradient-to-t from-gradienttwo to-primary flex w-full py-7 px-14 rounded-section items-center justify-between">
         <span className="w-[580px]">
           <h3 className="font-semibold text-4xl text-white">

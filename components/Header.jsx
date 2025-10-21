@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full px-hori py-[21px] flex items-center duration-700 ease-out justify-between 
+      className={`fixed top-0 left-0 z-50 w-full px-hori py-[21px] flex items-center duration-400 ease-out justify-between 
         ${!isVisible ? "opacity-0 pointer-events-none" : "opacity-100"}
         ${
           isStyled

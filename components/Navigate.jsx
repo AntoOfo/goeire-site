@@ -28,7 +28,10 @@ export default function Navigate() {
   }, []);
 
   return (
-    <section className="px-hori py-vert bg-section-main font-manrope text-primary">
+    <section
+      id="guide"
+      className="px-hori py-vert bg-section-main font-manrope text-primary"
+    >
       <div className="flex justify-between">
         <div className="w-[600px]">
           <h2 className="font-semibold text-5xl mb-4">
