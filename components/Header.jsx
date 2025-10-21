@@ -7,6 +7,8 @@ import AccountBlack from "../icons/user2.png";
 
 import { useEffect, useState } from "react";
 
+import { Link } from "react-scroll";
+
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [isStyled, setStyled] = useState(false);
@@ -40,13 +42,13 @@ export default function Header() {
         />
       </div>
 
-      <div className="flex gap-[50px] font-manrope text-[20px] duration-400 font-light">
+      <nav className="flex gap-[50px] font-manrope text-[20px] duration-400 font-light">
         <p>Home</p>
         <p>Destinations</p>
         <p>Experiences</p>
         <p>Guide</p>
         <p>Plan Trip</p>
-      </div>
+      </nav>
 
       <div className="flex gap-[50px]">
         <img
