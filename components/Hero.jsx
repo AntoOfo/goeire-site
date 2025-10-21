@@ -26,7 +26,7 @@ export default function Hero() {
           Plan your perfect escape, from rugged coastlines to charming villages,
           and make memories that last a lifetime.
         </p>
-        <button className="mt-9 px-6 py-1.5 w-[179px] bg-transparent rounded-md-btn border border-white font-light text-[20px]">
+        <button className="mt-9 px-6 py-1.5 w-[179px] bg-transparent rounded-md-btn border-[1.5px] border-white font-normal text-[20px] duration-300 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer">
           Explore Now
         </button>
       </div>
