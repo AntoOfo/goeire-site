@@ -26,7 +26,7 @@ export default function Hero() {
             From Cliffs to Castles, Experience It All
           </span>
 
-          <span className="absolute top-0 left-0">
+          <span className="absolute top-0 left-0 opacity-0 animate-fadeIn">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
