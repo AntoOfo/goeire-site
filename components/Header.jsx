@@ -43,11 +43,21 @@ export default function Header() {
       </div>
 
       <nav className="flex gap-[50px] font-manrope text-[20px] duration-400 font-light">
-        <p>Home</p>
-        <p>Destinations</p>
-        <p>Experiences</p>
-        <p>Guide</p>
-        <p>Plan Trip</p>
+        <Link to="home" smooth={true} duration={900} offset={-60}>
+          Home
+        </Link>
+        <Link to="destinations" smooth={true} duration={900} offset={-50}>
+          Destinations
+        </Link>
+        <Link to="experiences" smooth={true} duration={900} offset={-60}>
+          Experiences
+        </Link>
+        <Link to="guide" smooth={true} duration={900} offset={-90}>
+          Guide
+        </Link>
+        <Link to="plan" smooth={true} duration={900}>
+          Plan Trip
+        </Link>
       </nav>
 
       <div className="flex gap-[50px]">
