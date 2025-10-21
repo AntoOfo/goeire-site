@@ -43,19 +43,48 @@ export default function Header() {
       </div>
 
       <nav className="flex gap-[50px] font-manrope text-[20px] duration-400 font-light">
-        <Link to="home" smooth={true} duration={900} offset={-60}>
+        <Link
+          to="home"
+          smooth={true}
+          duration={900}
+          offset={-60}
+          className="hover:cursor-pointer duration-200 hover:opacity-70"
+        >
           Home
         </Link>
-        <Link to="destinations" smooth={true} duration={900} offset={-50}>
+        <Link
+          to="destinations"
+          smooth={true}
+          duration={900}
+          offset={-50}
+          className="hover:cursor-pointer duration-200 hover:opacity-70"
+        >
           Destinations
         </Link>
-        <Link to="experiences" smooth={true} duration={900} offset={-60}>
+        <Link
+          to="experiences"
+          smooth={true}
+          duration={900}
+          offset={-60}
+          className="hover:cursor-pointer duration-200 hover:opacity-70"
+        >
           Experiences
         </Link>
-        <Link to="guide" smooth={true} duration={900} offset={-90}>
+        <Link
+          to="guide"
+          smooth={true}
+          duration={900}
+          offset={-90}
+          className="hover:cursor-pointer duration-200 hover:opacity-70"
+        >
           Guide
         </Link>
-        <Link to="plan" smooth={true} duration={900}>
+        <Link
+          to="plan"
+          smooth={true}
+          duration={900}
+          className="hover:cursor-pointer duration-200 hover:opacity-70"
+        >
           Plan Trip
         </Link>
       </nav>
@@ -64,12 +93,12 @@ export default function Header() {
         <img
           src={isStyled ? SearchBlack : Search}
           alt="Search"
-          className="w-6 h-6"
+          className="w-6 h-6 hover:cursor-pointer duration-200 hover:opacity-70"
         />
         <img
           src={isStyled ? AccountBlack : Account}
           alt="Account"
-          className="w-6 h-6 opacity-85"
+          className="w-6 h-6 opacity-85 hover:cursor-pointer duration-200 hover:opacity-55"
         />
       </div>
     </header>
