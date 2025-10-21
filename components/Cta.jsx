@@ -14,7 +14,7 @@ export default function Cta() {
             today.
           </p>
         </span>
-        <button className="font-semibold text-2xl rounded-md-btn bg-white text-primary px-7 py-4">
+        <button className="font-semibold text-2xl rounded-md-btn bg-transparent border-2 border-white text-white px-7 py-4 duration-300 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer">
           Plan Your Trip
         </button>
       </div>

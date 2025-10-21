@@ -23,6 +23,7 @@ export default function Stats() {
                   end={stat.value}
                   duration={3}
                   decimals={stat.decimals}
+                  className="hover:cursor-default"
                 />
               ) : (
                 0
