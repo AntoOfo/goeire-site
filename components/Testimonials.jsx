@@ -8,7 +8,10 @@ export default function Testimonials() {
           Ireland, As Told By Others
         </h2>
         <div className="flex justify-between mt-14">
-          <span className="flex flex-col gap-5 items-center w-[435px]">
+          <span
+            data-aos="fade-right"
+            className="flex flex-col gap-5 items-center w-[435px]"
+          >
             <img src={Quote} className="w-12 h-12" />
             <h3 className="font-medium text-2xl text-center w-80">
               I'll tell you what, it doesn't get more beautiful than the west of
@@ -17,7 +20,10 @@ export default function Testimonials() {
             <p className="font-normal text-[20px]">— Matthew Goode</p>
           </span>
 
-          <span className="flex flex-col gap-5 items-center w-[435px]">
+          <span
+            data-aos="fade"
+            className="flex flex-col gap-5 items-center w-[435px]"
+          >
             <img src={Quote} className="w-12 h-12" />
             <h3 className="font-medium text-2xl text-center">
               Ireland has always been the home of the dreamer, the poet and the
@@ -26,7 +32,10 @@ export default function Testimonials() {
             <p className="font-normal text-[20px]">— Jordan Richard</p>
           </span>
 
-          <span className="flex flex-col gap-5 items-center w-[435px]">
+          <span
+            data-aos="fade-left"
+            className="flex flex-col gap-5 items-center w-[435px]"
+          >
             <img src={Quote} className="w-12 h-12" />
             <h3 className="font-medium text-2xl text-center w-80">
               I feel more and more the time wasted that is not spent in Ireland.
