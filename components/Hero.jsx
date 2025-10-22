@@ -20,8 +20,10 @@ export default function Hero() {
       ></div>
 
       <div className="relative z-10 flex flex-col text-white font-manrope">
-        <p className="font-light text-[20px] mb-5">Meet Ireland</p>
-        <h1 className=" relative font-extrabold text-[64px] w-[744px] leading-tight m-0">
+        <p className="font-light text-[clamp(0.63rem,1.32vw,1.25rem)] mb-[clamp(0.63rem,1.32vw,1.25rem)]">
+          Meet Ireland
+        </p>
+        <h1 className=" relative font-extrabold text-[clamp(2rem,4.21vw,4rem)] w-[clamp(23.25rem,48.88vw,46.5rem)] leading-tight m-0">
           <span className="invisible block">
             From Cliffs to Castles, Experience It All
           </span>
@@ -40,11 +42,11 @@ export default function Hero() {
             />
           </span>
         </h1>
-        <p className="font-light text-[20px] w-[606px] mt-6">
+        <p className="font-light text-[clamp(0.63rem,1.32vw,1.25rem)] w-[clamp(18.94rem,39.85vw,37.88rem)] mt-[clamp(0.75rem,1.58vw,1.5rem)]">
           Plan your perfect escape, from rugged coastlines to charming villages,
           and make memories that last a lifetime.
         </p>
-        <button className="mt-9 px-6 py-1.5 w-[179px] bg-transparent rounded-md-btn border-[1.5px] border-white font-normal text-[20px] duration-300 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer">
+        <button className="mt-[clamp(1.13rem,2.36vw,2.25rem)] px-clamp(0.75rem,1.58vw,1.5rem) py-[clamp(0.19rem,0.39vw,0.38rem)] w-[clamp(5.59rem,11.76vw,11.19rem)] bg-transparent rounded-md-btn border-[1.5px] border-white font-normal text-[clamp(0.63rem,1.32vw,1.25rem)] duration-300 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer">
           Explore Now
         </button>
       </div>
