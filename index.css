@@ -21,8 +21,8 @@ body {
     --radius-img: 20px;
     --radius-section: 30px;
 
-    --spacing-vert: 53px;
-    --spacing-hori: 63px;
+    --spacing-vert: clamp(1.65rem, 3.4vw, 3.3rem);
+    --spacing-hori: clamp(1.95rem, 4.1vw, 3.9rem);
 }
 
 :root {
