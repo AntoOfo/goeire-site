@@ -14,14 +14,17 @@ export default function Destinations() {
       id="destinations"
       className=" py-vert bg-section-main font-manrope"
     >
-      <div className=" flex flex-col gap-4 text-center text-primary">
+      <div
+        data-aos="fade-up"
+        className=" flex flex-col gap-4 text-center text-primary"
+      >
         <h2 className="font-semibold text-5xl">Top Destinations</h2>
         <p className="font-medium text-[20px]">
           Explore Ireland's most unforgettable locations
         </p>
       </div>
 
-      <div className="mt-14 font-manrope text-white">
+      <div data-aos="fade-up" className="mt-14 font-manrope text-white">
         <Swiper
           effect={"coverflow"}
           grabCursor={false}
