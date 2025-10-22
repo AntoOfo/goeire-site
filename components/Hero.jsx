@@ -21,10 +21,10 @@ export default function Hero() {
       ></div>
 
       <div className="relative z-10 flex flex-col text-white font-manrope">
-        <p className="font-light text-[clamp(0.63rem,1.32vw,1.25rem)] mb-[clamp(0.63rem,1.32vw,1.25rem)]">
+        <p className="preheading font-light text-[clamp(0.9rem,1.32vw,1.25rem)] mb-[clamp(0.63rem,1.32vw,1.25rem)]">
           Meet Ireland
         </p>
-        <h1 className="heading relative font-extrabold text-[clamp(2rem,4.21vw,4rem)] w-[clamp(23.25rem,48.88vw,46.5rem)] leading-tight m-0">
+        <h1 className="heading relative font-extrabold text-[clamp(2.5rem,4.21vw,4rem)] w-[clamp(32rem,48.88vw,46.5rem)] leading-tight m-0">
           <span className="invisible block">
             From Cliffs to Castles, Experience It All
           </span>
@@ -43,7 +43,7 @@ export default function Hero() {
             />
           </span>
         </h1>
-        <p className="subheading font-light text-[clamp(0.63rem,1.32vw,1.25rem)] w-[clamp(18.94rem,39.85vw,37.88rem)] mt-[clamp(0.75rem,1.58vw,1.5rem)]">
+        <p className="subheading font-light text-[clamp(0.9rem,1.32vw,1.25rem)] w-[clamp(26rem,39.85vw,37.88rem)] mt-[clamp(0.75rem,1.58vw,1.5rem)]">
           Plan your perfect escape, from rugged coastlines to charming villages,
           and make memories that last a lifetime.
         </p>

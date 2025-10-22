@@ -14,11 +14,16 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .heading {
         font-size: 1.5rem;
+        width: 390px;
     }
     .subheading {
-        width: 17rem;
+        width: clamp(10rem, 70vw, 20rem);
+        font-size:x-small;
+    }
+    .preheading {
+        font-size: x-small;
     }
 }
