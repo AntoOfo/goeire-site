@@ -1,0 +1,24 @@
+.hero {
+    min-height: 100vh;
+}
+
+@media (max-width: 940px) {
+    .hero {
+        min-height: 80vh;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+    .subheading {
+        width: 17rem;
+    }
+}
