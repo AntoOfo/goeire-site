@@ -1,3 +1,5 @@
+import "../styles/header.css";
+
 import Logo from "../icons/eirelogo.png";
 import LogoBlack from "../icons/eirelogo2.png";
 import Search from "../icons/search.png";
@@ -42,7 +44,7 @@ export default function Header() {
         />
       </div>
 
-      <nav className="flex gap-[clamp(1.56rem,3.28vw,3.13rem)] font-manrope text-[clamp(0.63rem,1.32vw,1.25rem)] duration-400 font-light">
+      <nav className="flex gap-[clamp(1.56rem,3.28vw,3.13rem)] font-manrope text-[clamp(0.63rem,1.32vw,1.25rem)] text-responsive duration-400 font-light">
         <Link
           to="home"
           smooth={true}
