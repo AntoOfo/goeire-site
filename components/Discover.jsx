@@ -33,28 +33,28 @@ export default function Discover() {
 
             {discoverData.map((disc, index) => (
               <div className="group hover:cursor-pointer">
-                <div className="flex gap-7 items-center py-8">
+                <div className="flex gap-[clamp(0.88rem,1.84vw,1.75rem)] items-center py-[clamp(1rem,2.1vw,2rem)]">
                   <img
                     src={disc.image}
-                    className="w-32 h-32 rounded-img object-cover"
+                    className="w-[clamp(4rem,8.41vw,8rem)] h-[clamp(4rem,8.41vw,8rem)] rounded-img object-cover"
                   />
                   <div className="flex w-full justify-between items-center">
-                    <div className="flex flex-col gap-0.5">
-                      <span className="flex gap-5 items-baseline">
-                        <h3 className="font-medium text-[28px] duration-400 group-hover:text-[28.5px]">
+                    <div className="flex flex-col gap-[clamp(0.06rem,0.13vw,0.13rem)]">
+                      <span className="flex gap-[clamp(0.63rem,1.32vw,1.25rem)] items-baseline">
+                        <h3 className="font-medium text-[clamp(0.88rem,1.84vw,1.75rem)] duration-400 group-hover:text-[clamp(0.89rem,1.87vw,1.78rem)]">
                           {disc.title}
                         </h3>
-                        <p className="font-normal text-[16px] opacity-60">
+                        <p className="font-normal text-[clamp(0.5rem,1.05vw,1rem)] opacity-60">
                           {disc.tag}
                         </p>
                       </span>
-                      <p className="font-normal text-[20px] opacity-80">
+                      <p className="font-normal text-[clamp(0.63rem,1.32vw,1.25rem)] opacity-80">
                         {disc.desc}
                       </p>
                     </div>
                     <img
                       src={Chevron}
-                      className="w-4 h-4 mr-1.5 opacity-50 duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:mr-0"
+                      className="w-[clamp(0.5rem,1.05vw,1rem)] h-[clamp(0.5rem,1.05vw,1rem)] mr-[clamp(0.19rem,0.39vw,0.38rem)] opacity-50 duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:mr-0"
                     />
                   </div>
                 </div>
