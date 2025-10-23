@@ -1,3 +1,5 @@
+import "../styles/discover.css";
+
 import { discoverData } from "../data/discoverData";
 import Placeholder from "../images/dublin.crop.webp";
 import Chevron from "../icons/chevron.png";
@@ -40,7 +42,7 @@ export default function Discover() {
                   />
                   <div className="flex w-full justify-between items-center">
                     <div className="flex flex-col gap-[clamp(0.06rem,0.13vw,0.13rem)]">
-                      <span className="flex gap-[clamp(0.63rem,1.32vw,1.25rem)] items-baseline">
+                      <span className="discover-col flex items-baseline">
                         <h3 className="font-medium text-[clamp(0.88rem,1.84vw,1.75rem)] duration-400 group-hover:text-[clamp(0.89rem,1.87vw,1.78rem)]">
                           {disc.title}
                         </h3>
@@ -48,7 +50,7 @@ export default function Discover() {
                           {disc.tag}
                         </p>
                       </span>
-                      <p className="font-normal text-[clamp(0.63rem,1.32vw,1.25rem)] opacity-80">
+                      <p className="discover-width font-normal text-[clamp(0.63rem,1.32vw,1.25rem)] opacity-80">
                         {disc.desc}
                       </p>
                     </div>

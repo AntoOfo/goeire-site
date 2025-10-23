@@ -1,0 +1,16 @@
+@layer components {
+    .discover-col {
+        gap: clamp(0.63rem, 1.32vw, 1.25rem);
+    }
+
+    @media (max-width: 520px) {
+        .discover-width {
+            width: clamp(6.5rem,40vw,13rem);
+        }
+        .discover-col {
+            flex-direction: column;
+            gap: 0px;
+            margin-bottom: 2px;
+        }
+    }
+}
