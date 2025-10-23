@@ -16,7 +16,7 @@ export default function Stats() {
       <div className="flex justify-between">
         {statsData.map((stat) => (
           <div className="text-center">
-            <h2 className="font-semibold text-5xl">
+            <h2 className="font-semibold text-[clamp(1rem,3.16vw,3rem)]">
               {inView ? (
                 <CountUp
                   start={0}
@@ -30,7 +30,9 @@ export default function Stats() {
               )}
               {stat.end}
             </h2>
-            <h3 className="font-light text-[32px]">{stat.label}</h3>
+            <h3 className="font-light text-[clamp(0.5rem,2.1vw,2rem)]">
+              {stat.label}
+            </h3>
           </div>
         ))}
       </div>
