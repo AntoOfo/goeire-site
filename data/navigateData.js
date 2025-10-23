@@ -1,4 +1,4 @@
-import Clover from "../icons/nature.png"
+import Clover from "../icons/clover_two.png"
 import Suitcase from "../icons/suitcase.png"
 import Relax from "../icons/relax.png"
 
