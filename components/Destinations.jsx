@@ -54,8 +54,8 @@ export default function Destinations() {
               slidesPerView: 1,
               centeredSlides: true,
             },
-            382: {
-              slidesPerView: 2,
+            512: {
+              slidesPerView: 3,
               centeredSlides: true,
             },
             1024: {
