@@ -1,3 +1,5 @@
+import "../styles/destinations.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -28,15 +30,13 @@ export default function Destinations() {
 
       <div
         data-aos="fade-up"
-        className="mt-[clamp(1.75rem,3.68vw,3.5rem)] font-manrope text-white"
+        className="mt-[clamp(1.75rem,3.68vw,3.5rem)] swiper-mobile font-manrope text-white"
       >
         <Swiper
           effect={"coverflow"}
           grabCursor={false}
-          centeredSlides={false}
-          slidesPerView={3}
           loop={true}
-          allowTouchMove={false}
+          allowTouchMove={true}
           speed={2500}
           autoplay={{
             delay: 2500,
@@ -48,6 +48,20 @@ export default function Destinations() {
             depth: 200,
             modifier: 1,
             slideShadows: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              centeredSlides: true,
+            },
+            382: {
+              slidesPerView: 2,
+              centeredSlides: true,
+            },
+            1024: {
+              slidesPerView: 3,
+              centeredSlides: false,
+            },
           }}
           pagination={{
             dynamicBullets: true,

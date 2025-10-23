@@ -1,0 +1,14 @@
+@layer components {
+    .swiper-mobile {
+            padding-left: 0;
+            padding-right: 0;
+            
+        }
+
+    @media (max-width: 380px) {
+            .swiper-mobile {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+    }
+}
