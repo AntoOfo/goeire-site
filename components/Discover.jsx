@@ -11,14 +11,23 @@ export default function Discover() {
       className="px-hori py-vert bg-section-secondary font-manrope text-primary"
     >
       <div>
-        <h2 data-aos="fade-right" className="font-semibold text-5xl mb-4">
+        <h2
+          data-aos="fade-right"
+          className="font-semibold text-[clamp(1.5rem,3.16vw,3rem)] mb-[clamp(0.5rem,1.05vw,1rem)]"
+        >
           What Will You Discover?
         </h2>
-        <p data-aos="fade-right" className="ml-1 font-medium text-[20px]">
+        <p
+          data-aos="fade-right"
+          className="ml-1 font-medium text-[clamp(0.63rem,1.32vw,1.25rem)]"
+        >
           Curated experiences across Ireland's landscapes
         </p>
 
-        <div data-aos="fade-right" className="mt-14">
+        <div
+          data-aos="fade-right"
+          className="mt-[clamp(1.75rem,3.68vw,3.5rem)]"
+        >
           <div>
             <Divider className="opacity-40" />
 
