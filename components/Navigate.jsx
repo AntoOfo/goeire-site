@@ -47,7 +47,7 @@ export default function Navigate() {
             </p>
           </div>
 
-          <Divider className="w-[clamp(18.13rem,38.13vw,36.25rem)]" />
+          <Divider className="divider w-[clamp(18.13rem,38.13vw,36.25rem)]" />
 
           {/* TRAVEL DIV !!!*/}
           <div className="travel flex items-center gap-[clamp(0.44rem,0.92vw,0.88rem)] mb-[clamp(1.13rem,2.36vw,2.25rem)] mt-[clamp(1.13rem,2.36vw,2.25rem)]">

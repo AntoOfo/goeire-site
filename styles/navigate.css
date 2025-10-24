@@ -18,8 +18,30 @@
         .flex-mobile .travel {
             order: 2 !important;
         }
-        .flex-mobile .tips {
+        .flex-mobile .divider {
             order: 3 !important;
+        }
+        .flex-mobile .tips {
+            order: 4 !important;
+        }
+
+        .header{
+            text-align: center;
+        }
+        #map {
+            width: 100% !important;
+        }
+        .divider {
+            width: 100% !important;
+        }
+        .travel {
+            margin-bottom: 12px !important;
+        }
+        .tips > div {
+            border: 0 !important;
+            background-color: transparent !important;
+            padding-inline: 0 !important;
+            margin-top: 10px !important;
         }
     }
 }
