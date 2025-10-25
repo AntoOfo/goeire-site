@@ -1,0 +1,87 @@
+@layer components {
+    .wrapper-one {
+            display: contents;
+        }
+    .wrapper-two {
+        display: contents;
+    }
+    .wrapper-three {
+        display: contents;
+    } 
+    
+    @media (max-width: 600px) {
+        .test-mobile {
+            flex-direction: column;
+            gap: 28px;
+        }
+        .quote-left {
+            width: 100% !important;
+            flex-direction: row !important;
+            border-width: 1px;
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.3);
+            padding-inline: 16px;
+            padding-block: 8px;
+        }
+        .quote-left > img {
+            display: none;
+        }
+        .wrapper-one {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            gap: 5px;
+        }
+        /* font-size: clamp(0.375rem, 2vw, 0.75rem); */
+        .wrapper-one > h3 {
+            width: 100% !important;
+            text-align: start !important;
+            font-size: clamp(0.56rem, 2vw, 0.75rem) !important;
+        }
+        .wrapper-one > p {
+            font-size: clamp(0.4rem, 1.7vw, 0.63rem) !important;
+        }
+
+        .quote-right {
+            width: 100% !important;
+            flex-direction: row !important;
+            border-width: 1px;
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.3);
+            padding-inline: 16px;
+            padding-block: 8px;
+        }
+        .quote-right > img {
+            display: none;
+        }
+        .wrapper-two {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            gap: 5px;
+        }
+        .wrapper-two > h3 {
+            width: 100% !important;
+            text-align: start !important;
+            font-size: clamp(0.56rem, 2vw, 0.75rem) !important;
+        }
+        .wrapper-two > p {
+            font-size: clamp(0.4rem, 1.7vw, 0.63rem) !important;
+        }
+
+        .wrapper-three {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            gap: 5px;
+        }
+        .wrapper-three > h3 {
+            width: 100% !important;
+            text-align: start !important;
+            font-size: clamp(0.56rem, 2vw, 0.75rem) !important;
+        }
+        .wrapper-three > p {
+            font-size: clamp(0.4rem, 1.7vw, 0.63rem) !important;
+        }
+    }
+}
