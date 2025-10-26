@@ -8,6 +8,12 @@
     }
 }
 
+@media (min-width: 693px) and (max-width: 724px) {
+    .heading {
+        width: 335px;
+    }
+}
+
 @media (max-width: 680px) {
     .hero {
         min-height: 60vh;
@@ -17,7 +23,7 @@
 @media (max-width: 480px) {
     .heading {
         font-size: 1.5rem;
-        width: 390px;
+        width: clamp(16.25rem, 45.6vw, 43.44rem);
     }
     .subheading {
         width: clamp(10rem, 70vw, 20rem);
@@ -27,3 +33,4 @@
         font-size: x-small;
     }
 }
+

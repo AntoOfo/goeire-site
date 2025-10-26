@@ -24,7 +24,7 @@ export default function Hero() {
         <p className="preheading font-light text-[clamp(0.9rem,1.32vw,1.25rem)] mb-[clamp(0.63rem,1.32vw,1.25rem)]">
           Meet Ireland
         </p>
-        <h1 className="heading relative font-extrabold text-[clamp(2.5rem,4.21vw,4rem)] w-[clamp(21.72rem,45.6vw,43.44rem)] leading-tight m-0">
+        <h1 className="heading relative font-extrabold text-[clamp(2.5rem,4.21vw,4rem)] w-[clamp(16.25rem,45.6vw,43.44rem)] leading-tight m-0">
           <span className="invisible block">
             From Cliffs to Castles, Experience It All
           </span>
