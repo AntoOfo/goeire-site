@@ -38,7 +38,7 @@ export default function Discover() {
                 <div className="flex gap-[clamp(0.88rem,1.84vw,1.75rem)] items-center py-[clamp(1rem,2.1vw,2rem)]">
                   <img
                     src={disc.image}
-                    className="w-[clamp(4rem,8.41vw,8rem)] h-[clamp(4rem,8.41vw,8rem)] rounded-img object-cover"
+                    className="w-[clamp(4rem,8.41vw,8rem)] h-[clamp(4rem,8.41vw,8rem)] rounded-2xl object-cover"
                   />
                   <div className="flex w-full justify-between items-center">
                     <div className="flex flex-col gap-[clamp(0.06rem,0.13vw,0.13rem)]">

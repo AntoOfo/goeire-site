@@ -63,7 +63,7 @@ export default function Navigate() {
           {/* TIPS DIV !!!*/}
           <div className="tips">
             {navigateData.map((nav) => (
-              <div className="flex items-center gap-[clamp(0.44rem,0.92vw,0.88rem)] mt-[clamp(0.88rem,1.84vw,1.75rem)] bg-white border-1 border-primary/30 rounded-img px-[clamp(0.5rem,1.05vw,1rem)] py-[clamp(0.38rem,0.79vw,0.75rem)]">
+              <div className="flex items-center gap-[clamp(0.44rem,0.92vw,0.88rem)] mt-[clamp(0.88rem,1.84vw,1.75rem)] bg-white border-1 border-primary/30 rounded-2xl px-[clamp(0.5rem,1.05vw,1rem)] py-[clamp(0.38rem,0.79vw,0.75rem)]">
                 <img
                   src={nav.icon}
                   className="w-[clamp(1rem,2.1vw,2rem)] h-[clamp(1rem,2.1vw,2rem)]"
@@ -79,7 +79,7 @@ export default function Navigate() {
         {/* MAP DIV !!!*/}
         <div
           id="map"
-          className="w-[clamp(19.81rem,41.68vw,39.63rem)] h-[clamp(17.34rem,36.47vw,34.69rem)] rounded-img z-10 overflow-hidden border-1 border-black/30"
+          className="w-[clamp(19.81rem,41.68vw,39.63rem)] h-[clamp(17.34rem,36.47vw,34.69rem)] rounded-2xl z-10 overflow-hidden border-1 border-black/30"
         ></div>
       </div>
     </section>
