@@ -24,12 +24,12 @@
             width: 100% !important;
             flex-direction: row !important;
             border: 1px solid rgba(0, 0, 0, 0.3);
-            border-radius: 20px;
-            padding-inline: 16px;
-            padding-block: 8px;
+            border-radius: 20px !important;
+            padding-inline: 16px !important;
+            padding-block: 8px !important;
         }
         .quote-left > img {
-            display: none;
+            display: none !important;
         }
         .wrapper-one {
             display: flex;
@@ -50,13 +50,13 @@
         .quote-right {
             width: 100% !important;
             flex-direction: row !important;
-            border: 1px solid rgba(0, 0, 0, 0.3);
-            border-radius: 20px;
-            padding-inline: 16px;
-            padding-block: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.3) !important;
+            border-radius: 20px !important;
+            padding-inline: 16px !important;
+            padding-block: 8px !important;
         }
         .quote-right > img {
-            display: none;
+            display: none !important;
         }
         .wrapper-two {
             display: flex;
