@@ -3,66 +3,71 @@ import Github from "../icons/github.png";
 import Mail from "../icons/mail.png";
 import Logo from "../icons/eirelogo.png";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-
 export default function Footer() {
   return (
-    <footer className="py-16 px-44 bg-footer text-white font-manrope">
+    <footer className="py-[clamp(2rem,4.21vw,4rem)] px-[clamp(5.5rem,11.57vw,11rem)] bg-footer text-white font-manrope">
       <div className="flex justify-between">
-        <span className="flex flex-col gap-[20px] w-[280px]">
-          <img src={Logo} className="w-[100px] opacity-60" />
-          <span className="flex ml-1 gap-[14px]">
+        <span className="flex flex-col gap-[clamp(0.63rem,1.32vw,1.25rem)] w-[clamp(8.75rem,18.4vw,17.5rem)]">
+          <img
+            src={Logo}
+            className="w-[clamp(3.13rem,6.57vw,6.25rem)] opacity-60"
+          />
+          <span className="flex ml-[clamp(0.13rem,0.26vw,0.25rem)] gap-[clamp(0.44rem,0.92vw,0.88rem)]">
             <a href="https://www.linkedin.com/in/antonioofodile/">
               <img
                 src={Linkedin}
-                className="w-[24px] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
+                className="w-[clamp(0.75rem,1.58vw,1.5rem)] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
               />
             </a>
             <a href="https://github.com/AntoOfo">
               <img
                 src={Github}
-                className="w-[24px] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
+                className="w-[clamp(0.75rem,1.58vw,1.5rem)] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
               />
             </a>
             <a href="mailto:antonioofodileuk@gmail.com">
               <img
                 src={Mail}
-                className="w-[24px] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
+                className="w-[clamp(0.75rem,1.58vw,1.5rem)] opacity-30 hover:cursor-pointer hover:opacity-80 duration-300"
               />
             </a>
           </span>
         </span>
 
-        <span className="flex flex-col gap-[18px] w-[280px]">
-          <p className="font-normal text-[18px] opacity-60">CONTACT US</p>
-          <p className="font-normal text-[18px] opacity-60">
+        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-[280px]">
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
+            CONTACT US
+          </p>
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             enquires@goeire.co
           </p>
-          <p className="font-normal text-[18px] opacity-60">
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             12 Smith Rd, Co. Dublin, Unit 12
           </p>
-          <p className="font-normal text-[18px] opacity-60">+353 89 232 4508</p>
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
+            +353 89 232 4508
+          </p>
         </span>
 
-        <span className="flex flex-col gap-[18px] w-[280px]">
-          <p className="font-normal text-[18px] opacity-60">SUBSCRIBE</p>
-          <p className="font-normal text-[18px] opacity-60">
+        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-[clamp(8.75rem,18.4vw,17.5rem)]">
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
+            SUBSCRIBE
+          </p>
+          <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             Enter your email to get notified about our latest news
           </p>
-          <div className="flex gap-2 w-full items-center">
-            <Input
-              type="email"
+          <div className="flex gap-2">
+            <input
+              type="text"
+              id="email"
               placeholder="Email"
-              className="bg-white/7 border-transparent"
+              className="rounded-sm-btn  bg-primary/40 pl-2 w-48"
             />
-            <Button
-              type="submit"
-              variant="outline"
-              className="bg-white/7 border-1 border-white/50 hover:cursor-pointer"
-            >
-              Subscribe
-            </Button>
+            <input
+              type="button"
+              value="Subscribe"
+              className="text-white/90 border-[1px] border-white/50 rounded-sm-btn px-2 py-0.5"
+            />
           </div>
         </span>
       </div>
