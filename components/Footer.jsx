@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="py-[clamp(2rem,4.21vw,4rem)] px-[clamp(5.5rem,11.57vw,11rem)] bg-footer text-white font-manrope">
       <div className="flex justify-between">
-        <span className="flex flex-col gap-[clamp(0.63rem,1.32vw,1.25rem)] w-[clamp(8.75rem,18.4vw,17.5rem)]">
+        <span className="flex flex-col gap-[clamp(0.63rem,1.32vw,1.25rem)] w-auto">
           <img
             src={Logo}
             className="w-[clamp(3.13rem,6.57vw,6.25rem)] opacity-60"
@@ -46,7 +46,7 @@ export default function Footer() {
           </span>
         </span>
 
-        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-[280px]">
+        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-auto">
           <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             CONTACT US
           </p>
@@ -61,25 +61,25 @@ export default function Footer() {
           </p>
         </span>
 
-        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-[clamp(8.75rem,18.4vw,17.5rem)]">
+        <span className="flex flex-col gap-[clamp(0.56rem,1.18vw,1.13rem)] w-[clamp(9rem,18.91vw,18rem)]">
           <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             SUBSCRIBE
           </p>
           <p className="font-normal text-[clamp(0.56rem,1.18vw,1.13rem)] opacity-60">
             Enter your email to get notified about our latest news
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-[clamp(0.25rem,0.53vw,0.5rem)]">
             <input
               type="text"
               id="email"
               placeholder="Email"
-              className="rounded-sm-btn text-[15px] bg-primary/40 pl-2 w-48 focus:outline-white/50 focus:outline-1"
+              className="rounded-sm-btn text-[clamp(0.47rem,0.99vw,0.94rem)] bg-primary/40 pl-[clamp(0.25rem,0.53vw,0.5rem)] w-[clamp(6rem,12.62vw,12rem)] focus:outline-white/50 focus:outline-1"
             />
             <input
               onClick={Button}
               type="button"
               value="Subscribe"
-              className={`text-white/90 text-[15px] border-[1px] border-white/50 rounded-sm-btn px-2.5 py-1 bg-primary/40 hover:bg-primary/50 hover:cursor-pointer transition-all duration-150 ${
+              className={`text-white/90 text-[clamp(0.47rem,0.99vw,0.94rem)] border-[1px] border-white/50 rounded-sm-btn px-[clamp(0.31rem,0.66vw,0.63rem)] py-[clamp(0.13rem,0.26vw,0.25rem)] bg-primary/40 hover:bg-primary/50 hover:cursor-pointer transition-all duration-150 ${
                 isClicked ? "!bg-white/100 !text-black scale-95" : "scale-100"
               }`}
             />
