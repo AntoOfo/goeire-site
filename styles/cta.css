@@ -2,8 +2,9 @@
     @media (max-width: 535px) {
         .cta-flex {
             flex-direction: column;
-            align-items: start !important;
-            gap: 15px;
+            text-align: center !important;
+            align-items: center !important;
+            gap: 20px;
         }
         .cta-flex span {
             width: 100% !important;
