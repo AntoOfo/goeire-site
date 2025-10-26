@@ -32,7 +32,7 @@ export default function Header() {
         ${!isVisible ? "opacity-0 pointer-events-none" : "opacity-100"}
         ${
           isStyled
-            ? "bg-white/60 rounded-[16px] backdrop-blur-md shadow-sm text-black"
+            ? "bg-white/40 rounded-[16px] backdrop-blur-md shadow-sm text-black"
             : "bg-transparent text-white"
         }`}
     >
