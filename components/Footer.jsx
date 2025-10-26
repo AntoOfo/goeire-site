@@ -3,7 +3,19 @@ import Github from "../icons/github.png";
 import Mail from "../icons/mail.png";
 import Logo from "../icons/eirelogo.png";
 
+import { useState } from "react";
+
 export default function Footer() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  function Button() {
+    setIsClicked(true);
+
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 300);
+  }
+
   return (
     <footer className="py-[clamp(2rem,4.21vw,4rem)] px-[clamp(5.5rem,11.57vw,11rem)] bg-footer text-white font-manrope">
       <div className="flex justify-between">
@@ -61,12 +73,15 @@ export default function Footer() {
               type="text"
               id="email"
               placeholder="Email"
-              className="rounded-sm-btn  bg-primary/40 pl-2 w-48"
+              className="rounded-sm-btn text-[15px] bg-primary/40 pl-2 w-48 focus:outline-white/50 focus:outline-1"
             />
             <input
+              onClick={Button}
               type="button"
               value="Subscribe"
-              className="text-white/90 border-[1px] border-white/50 rounded-sm-btn px-2 py-0.5"
+              className={`text-white/90 text-[15px] border-[1px] border-white/50 rounded-sm-btn px-2.5 py-1 bg-primary/40 hover:bg-primary/50 hover:cursor-pointer transition-all duration-150 ${
+                isClicked ? "!bg-white/100 !text-black scale-95" : "scale-100"
+              }`}
             />
           </div>
         </span>
