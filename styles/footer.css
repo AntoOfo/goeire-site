@@ -1,0 +1,14 @@
+@layer components {
+    @media (max-width: 570px) {
+        .footer-mobile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+        .logos-mobile {
+            flex-direction: row !important;
+            align-items: baseline !important;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+import "../styles/footer.css";
+
 import Linkedin from "../icons/linkedin_two.png";
 import Github from "../icons/github.png";
 import Mail from "../icons/mail.png";
@@ -18,8 +20,8 @@ export default function Footer() {
 
   return (
     <footer className="py-[clamp(2rem,4.21vw,4rem)] px-[clamp(5.5rem,11.57vw,11rem)] bg-footer text-white font-manrope">
-      <div className="flex justify-between">
-        <span className="flex flex-col gap-[clamp(0.63rem,1.32vw,1.25rem)] w-auto">
+      <div className="flex footer-mobile justify-between">
+        <span className="logos-mobile flex flex-col gap-[clamp(0.63rem,1.32vw,1.25rem)] w-auto">
           <img
             src={Logo}
             className="w-[clamp(3.13rem,6.57vw,6.25rem)] opacity-60"
