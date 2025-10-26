@@ -2,6 +2,7 @@ import "../styles/navigate.css";
 
 import Divider from "@mui/material/Divider";
 import Pin from "../icons/pin.png";
+import Marker from "../icons/marker_map.png";
 
 import { navigateData } from "../data/navigateData";
 import { locationsData } from "../data/locationsData";
@@ -19,8 +20,15 @@ export default function Navigate() {
       maxZoom: 19,
     }).addTo(map);
 
+    const customIcon = L.icon({
+      iconUrl: Marker,
+      iconSize: [20, 30],
+      iconAnchor: [15, 40],
+      popupAnchor: [0, -40],
+    });
+
     locationsData.map((loc) => {
-      L.marker(loc.coords)
+      L.marker(loc.coords, { icon: customIcon })
         .addTo(map)
         .bindPopup(`<b>${loc.name}</b><br />${loc.desc}`);
     });
