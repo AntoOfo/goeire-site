@@ -8,11 +8,17 @@
     .wrapper-three {
         display: contents;
     } 
-    
+    .img-mobile {
+        display: none !important;
+    }
+
     @media (max-width: 600px) {
         .test-mobile {
             flex-direction: column;
             gap: 28px;
+        }
+        .img-mobile {
+            display: flex !important;
         }
         .quote-left {
             width: 100% !important;

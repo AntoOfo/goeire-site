@@ -9,6 +9,12 @@ export default function Testimonials() {
         <h2 className="font-semibold text-[clamp(1.5rem,3.16vw,3rem)] text-center">
           Ireland, As Told By Others
         </h2>
+        <div className="img-mobile flex justify-center mt-[clamp(0.75rem,4.2vw,1.5rem)]">
+          <img
+            src={Quote}
+            className="justify-center w-[clamp(1.5rem,3.16vw,3rem)] h-[clamp(1.5rem,3.16vw,3rem)]"
+          />
+        </div>
         <div className="flex test-mobile justify-between mt-[clamp(1.75rem,3.68vw,3.5rem)]">
           {/* QUOTE ONE !*/}
           <span
