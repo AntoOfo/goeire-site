@@ -1,16 +1,107 @@
-# React + Vite
+# GoÉire
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<table>
+  <tr>
+    <td width="200">
+      <img src="screenshots/mainlogo.jpg" width="180"/>
+    </td>
+    <td>
+      <p>
+        <b>GoÉire</b> is a frontend built with React for a fully responsive travel website, designed to showcase the beauty and culture of Ireland.  
+        It features multiple sections including the Hero, Stats, Destinations, Discover, Navigate and Quotes.  
+        The design is clean, interactive, and adapts across desktop, tablet, and mobile devices.
+      </p>
+    </td>
+  </tr>
+</table>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Site
 
-## React Compiler
+Check out the site here:  
+https://goeire-site.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Main Sections
+<table>
+  <tr>
+    <th>Hero Section</th>
+    <th>Destinations</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/hero.png" width="600"/></td>
+    <td><img src="screenshots/dests.png" width="600"/></td>
+  </tr>
+
+  <tr>
+    <th>Discover</th>
+    <th>Navigate</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/discover.png" width="600"/></td>
+    <td><img src="screenshots/navigate.png" width="600"/></td>
+  </tr>
+
+  <tr>
+    <th>Quotes</th>
+    <th>Footer</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/testimonials.png" width="600"/></td>
+    <td><img src="screenshots/footer.png" width="600"/></td>
+  </tr>
+</table>
+
+### Responsive Views
+<table>
+  <tr>
+    <th align="center">Desktop View</th>
+    <th align="center">Tablet View</th>
+    <th align="center">Mobile View</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/desk.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="screenshots/tablet.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="screenshots/mobile.jpg" width="300"/>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Tech Stack
+
+- **React.js + Vite** - Frontend framework and setup  
+- **TailwindCSS** - Styling with responsive design and utility classes
+- **HTML5 & CSS3** - Structure and custom styles  
+- **Third-Party Libraries:** AOS, TypeIt, CountUp, Swiper, Leaflet  
+
+---
+
+## Setup Guide
+
+1. Clone the repo:
+   
+   ```bash
+   git clone https://github.com/AntoOfo/goeire-site
+   cd goeire-site
+    ```
+2. Install dependencies:
+   
+   ```bash
+   npm install
+    ```
+   
+4. Run the site locally:
+   ```bash
+   npm run dev
+    ```
