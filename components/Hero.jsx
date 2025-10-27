@@ -1,7 +1,7 @@
 import "../styles/hero.css";
 
 import HeroImg from "../images/hero.jpg";
-import Typewriter from "typewriter-effect";
+import TypeIt from "typeit-react";
 
 export default function Hero() {
   return (
@@ -30,15 +30,12 @@ export default function Hero() {
           </span>
 
           <span className="absolute top-0 left-0 opacity-0 animate-fadeIn">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("From Cliffs to Castles, Experience It All")
-                  .changeDelay(75)
-                  .start();
-              }}
+            <TypeIt
               options={{
-                delay: 40,
+                strings: ["From Cliffs to Castles, Experience It All "],
+                speed: 35,
+                cursorChar: "|",
+                waitUntilVisible: true,
               }}
             />
           </span>

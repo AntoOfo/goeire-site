@@ -8,11 +8,12 @@
     }
 }
 
-@media (min-width: 693px) and (max-width: 724px) {
+@media (min-width: 530px) and (max-width: 949px) {
     .heading {
-        width: 335px;
+        width: 433px;
     }
 }
+
 
 @media (max-width: 680px) {
     .hero {
@@ -20,7 +21,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
     .heading {
         font-size: 1.5rem;
         width: clamp(16.25rem, 45.6vw, 43.44rem);
